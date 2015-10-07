@@ -1,0 +1,15 @@
+C:\Users\Syarbeat\Downloads\BrockAllen.MembershipReboot-master\BrockAllen.MembershipReboot-master\samples\WebApiResourceOwner\ClientApp\bin\Debug\ClientApp.exe.config
+C:\Users\Syarbeat\Downloads\BrockAllen.MembershipReboot-master\BrockAllen.MembershipReboot-master\samples\WebApiResourceOwner\ClientApp\bin\Debug\ClientApp.exe
+C:\Users\Syarbeat\Downloads\BrockAllen.MembershipReboot-master\BrockAllen.MembershipReboot-master\samples\WebApiResourceOwner\ClientApp\bin\Debug\ClientApp.pdb
+C:\Users\Syarbeat\Downloads\BrockAllen.MembershipReboot-master\BrockAllen.MembershipReboot-master\samples\WebApiResourceOwner\ClientApp\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Syarbeat\Downloads\BrockAllen.MembershipReboot-master\BrockAllen.MembershipReboot-master\samples\WebApiResourceOwner\ClientApp\bin\Debug\System.Net.Http.Extensions.dll
+C:\Users\Syarbeat\Downloads\BrockAllen.MembershipReboot-master\BrockAllen.MembershipReboot-master\samples\WebApiResourceOwner\ClientApp\bin\Debug\System.Net.Http.Primitives.dll
+C:\Users\Syarbeat\Downloads\BrockAllen.MembershipReboot-master\BrockAllen.MembershipReboot-master\samples\WebApiResourceOwner\ClientApp\bin\Debug\Thinktecture.IdentityModel.Client.dll
+C:\Users\Syarbeat\Downloads\BrockAllen.MembershipReboot-master\BrockAllen.MembershipReboot-master\samples\WebApiResourceOwner\ClientApp\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Syarbeat\Downloads\BrockAllen.MembershipReboot-master\BrockAllen.MembershipReboot-master\samples\WebApiResourceOwner\ClientApp\bin\Debug\System.Net.Http.Extensions.xml
+C:\Users\Syarbeat\Downloads\BrockAllen.MembershipReboot-master\BrockAllen.MembershipReboot-master\samples\WebApiResourceOwner\ClientApp\bin\Debug\System.Net.Http.Primitives.xml
+C:\Users\Syarbeat\Downloads\BrockAllen.MembershipReboot-master\BrockAllen.MembershipReboot-master\samples\WebApiResourceOwner\ClientApp\bin\Debug\Thinktecture.IdentityModel.Client.pdb
+C:\Users\Syarbeat\Downloads\BrockAllen.MembershipReboot-master\BrockAllen.MembershipReboot-master\samples\WebApiResourceOwner\ClientApp\obj\Debug\ClientApp.csproj.App.config
+C:\Users\Syarbeat\Downloads\BrockAllen.MembershipReboot-master\BrockAllen.MembershipReboot-master\samples\WebApiResourceOwner\ClientApp\obj\Debug\ClientApp.csprojResolveAssemblyReference.cache
+C:\Users\Syarbeat\Downloads\BrockAllen.MembershipReboot-master\BrockAllen.MembershipReboot-master\samples\WebApiResourceOwner\ClientApp\obj\Debug\ClientApp.exe
+C:\Users\Syarbeat\Downloads\BrockAllen.MembershipReboot-master\BrockAllen.MembershipReboot-master\samples\WebApiResourceOwner\ClientApp\obj\Debug\ClientApp.pdb

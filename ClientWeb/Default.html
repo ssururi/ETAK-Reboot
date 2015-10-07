@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+
+    <script src="Scripts/angular.js"></script>
+    
+</head>
+<body ng-app="Reboot" ng-controller="TokenController">
+    <input type="text" id="txtUsername" />
+    <br />
+    <input type="text" id="txtPassword" />
+    <br />
+    <button ng-click="login()">LOGIN KK</button>
+
+    <script type="text/javascript">
+        var username = 'alice';
+        var password = 'pass';
+
+        var app = angular.module("Reboot", []);
+        app.factory("TokenService"), function ($http) {
+            return {
+                getToken: function () {
+                    var requestBody = {
+                        grant_type: 'password',
+                        username: username,
+                        password: password,
+                        scope: 'role'
+                    };
+
+                    var requestHeader = {
+                        'Accept': 'application/x-www-form-urlencoded'
+                    }
+
+                    return $http({
+                        method: 'POST',
+                        url: 'http://localhost:5034/Token',
+                        headers: requestHeader,
+                        data: requestBody
+                    }).success(function (data, status, headers, config) {
+                        console.log(data);
+                    }).error(function (data, status, headers, config) {
+                        console.log(status);
+                    });
+                }
+            }
+        }
+
+        app.controller('TokenController', function ($scope, TokenService) {
+            $scope.login = function () {
+                alert('login')
+                TokenService.getToken();
+            }
+        })
+    </script>
+
+</body>
+
+</html>

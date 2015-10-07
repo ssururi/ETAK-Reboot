@@ -1,0 +1,14 @@
+C:\Users\Syarbeat\Downloads\BrockAllen.MembershipReboot-master\BrockAllen.MembershipReboot-master\samples\WebApiResourceOwner\ClientWeb\bin\ClientWeb.dll.config
+C:\Users\Syarbeat\Downloads\BrockAllen.MembershipReboot-master\BrockAllen.MembershipReboot-master\samples\WebApiResourceOwner\ClientWeb\bin\ClientWeb.dll
+C:\Users\Syarbeat\Downloads\BrockAllen.MembershipReboot-master\BrockAllen.MembershipReboot-master\samples\WebApiResourceOwner\ClientWeb\bin\ClientWeb.pdb
+C:\Users\Syarbeat\Downloads\BrockAllen.MembershipReboot-master\BrockAllen.MembershipReboot-master\samples\WebApiResourceOwner\ClientWeb\bin\Newtonsoft.Json.dll
+C:\Users\Syarbeat\Downloads\BrockAllen.MembershipReboot-master\BrockAllen.MembershipReboot-master\samples\WebApiResourceOwner\ClientWeb\bin\System.Net.Http.Formatting.dll
+C:\Users\Syarbeat\Downloads\BrockAllen.MembershipReboot-master\BrockAllen.MembershipReboot-master\samples\WebApiResourceOwner\ClientWeb\bin\System.Web.Http.dll
+C:\Users\Syarbeat\Downloads\BrockAllen.MembershipReboot-master\BrockAllen.MembershipReboot-master\samples\WebApiResourceOwner\ClientWeb\bin\System.Web.Http.WebHost.dll
+C:\Users\Syarbeat\Downloads\BrockAllen.MembershipReboot-master\BrockAllen.MembershipReboot-master\samples\WebApiResourceOwner\ClientWeb\bin\Newtonsoft.Json.xml
+C:\Users\Syarbeat\Downloads\BrockAllen.MembershipReboot-master\BrockAllen.MembershipReboot-master\samples\WebApiResourceOwner\ClientWeb\bin\System.Net.Http.Formatting.xml
+C:\Users\Syarbeat\Downloads\BrockAllen.MembershipReboot-master\BrockAllen.MembershipReboot-master\samples\WebApiResourceOwner\ClientWeb\bin\System.Web.Http.xml
+C:\Users\Syarbeat\Downloads\BrockAllen.MembershipReboot-master\BrockAllen.MembershipReboot-master\samples\WebApiResourceOwner\ClientWeb\bin\System.Web.Http.WebHost.xml
+C:\Users\Syarbeat\Downloads\BrockAllen.MembershipReboot-master\BrockAllen.MembershipReboot-master\samples\WebApiResourceOwner\ClientWeb\obj\Debug\ClientWeb.csprojResolveAssemblyReference.cache
+C:\Users\Syarbeat\Downloads\BrockAllen.MembershipReboot-master\BrockAllen.MembershipReboot-master\samples\WebApiResourceOwner\ClientWeb\obj\Debug\ClientWeb.dll
+C:\Users\Syarbeat\Downloads\BrockAllen.MembershipReboot-master\BrockAllen.MembershipReboot-master\samples\WebApiResourceOwner\ClientWeb\obj\Debug\ClientWeb.pdb
