@@ -18,6 +18,8 @@ namespace ServerApp
 {
     public class Startup
     {
+        public static OAuthBearerAuthenticationOptions oauthConfig { get; private set; }
+
         public void Configuration(IAppBuilder app)
         {
             ConfigureMembershipReboot(app);
@@ -30,7 +32,7 @@ namespace ServerApp
             };
             app.UseOAuthAuthorizationServer(oauthServerConfig);
 
-            var oauthConfig = new Microsoft.Owin.Security.OAuth.OAuthBearerAuthenticationOptions
+            oauthConfig = new Microsoft.Owin.Security.OAuth.OAuthBearerAuthenticationOptions
             {
                 AuthenticationMode = Microsoft.Owin.Security.AuthenticationMode.Active,
                 AuthenticationType = "Bearer"
@@ -53,6 +55,8 @@ namespace ServerApp
             // client authentication separate from user authentication
             config.MultiTenant = true;
             config.RequireAccountVerification = false;
+
+            config.VerificationKeyLifetime = new TimeSpan(0, 40, 0);
             
             builder.RegisterInstance(config);
 
@@ -156,6 +160,7 @@ namespace ServerApp
                 //}
 
                 /* Custom validation for authenticated client to request access token */
+                var client = svc.GetByUsername(context.TokenRequest.ResourceOwnerPasswordCredentialsGrant.UserName);
                 if (svc.Authenticate("users", context.TokenRequest.ResourceOwnerPasswordCredentialsGrant.UserName, context.TokenRequest.ResourceOwnerPasswordCredentialsGrant.Password))
                 {
                     context.Validated();
@@ -172,12 +177,22 @@ namespace ServerApp
             if (svc.Authenticate("users", context.UserName, context.Password, out user))
             {
                 var claims = user.GetAllClaims();
+                //var id = new System.Security.Claims.ClaimsIdentity(claims, "MembershipReboot");
 
-                var id = new System.Security.Claims.ClaimsIdentity(claims, "MembershipReboot");
-                context.Validated(id);
-
-                AuthenticationProperties properties = CreateProperties(context.UserName, "CSR");
-                AuthenticationTicket ticket = new AuthenticationTicket(id, properties);
+                var tokenExpire = TimeSpan.FromMinutes(5);
+                ClaimsIdentity identity = new ClaimsIdentity(OAuthDefaults.AuthenticationType);
+                identity.AddClaim(new Claim(ClaimTypes.Name, context.UserName));
+                identity.AddClaim(new Claim(ClaimTypes.Role, claims.GetValue("role")));
+                //var prop = new AuthenticationProperties()
+                //{
+                //    IssuedUtc = DateTime.UtcNow,
+                //    ExpiresUtc = DateTime.UtcNow.Add(tokenExpire)
+                //};
+                //var ticket = new AuthenticationTicket(identity, prop);
+                AuthenticationProperties properties = CreateProperties(context.UserName, claims.GetValue("role"));
+                properties.IssuedUtc = DateTime.UtcNow;
+                properties.ExpiresUtc = DateTime.UtcNow.Add(tokenExpire);
+                AuthenticationTicket ticket = new AuthenticationTicket(identity, properties);
                 context.Validated(ticket);
             }
             else
@@ -203,7 +218,7 @@ namespace ServerApp
             IDictionary<string, string> data = new Dictionary<string, string>
             {
                 { "userName", userName },
-                { "role", role}
+                { "role", role }
             };
             return new AuthenticationProperties(data);
         }
